@@ -20,17 +20,41 @@ CREATE TABLE houses (
   address VARCHAR(255) NOT NULL
 );
 
-INSERT INTO
-  houses (address)
-VALUES
-  ("26th and Guerrero"), ("Dolores and Market");
+INSERT INTO houses (address) VALUES ("26th and Guerrero"); 
+
+INSERT INTO houses (address) VALUES ("Dolores and Market");
 
 INSERT INTO
   humans (fname, lname, house_id)
 VALUES
-  ("Devon", "Watts", 1), ("Matt", "Rubens", 1), ("Ned", "Ruggeri", 2);
+  ("Devon", "Watts", 1); 
+
+INSERT INTO
+  humans (fname, lname, house_id)
+VALUES
+  ("Matt", "Rubens", 1); 
+
+INSERT INTO
+  humans (fname, lname, house_id)
+VALUES
+  ("Ned", "Ruggeri", 2);
 
 INSERT INTO
   cats (name, owner_id)
 VALUES
-  ("Breakfast", 1), ("Earl", 2), ("Haskell", 3), ("Markov", 3);
+  ("Breakfast", 1) ;
+
+INSERT INTO
+  cats (name, owner_id)
+VALUES
+  ("Earl", 2) ;
+
+INSERT INTO
+  cats (name, owner_id)
+VALUES
+  ("Haskell", 3); 
+
+INSERT INTO
+  cats (name, owner_id)
+VALUES
+  ("Markov", 3);

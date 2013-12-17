@@ -16,7 +16,7 @@ describe MassObject do
     expect(EmptyMassObject.attributes).to be_empty
   end
 
-  it "::attriburtes cannot be called directly on MassObject" do
+  it "::attributes cannot be called directly on MassObject" do
     expect {
       MassObject.attributes
     }.to raise_error("must not call #attributes on MassObject directly")
